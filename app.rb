@@ -15,9 +15,8 @@ class App < Sinatra::Base
 	end
 
 	get '/date' do
-		date = Time.new.to_date.strftime('%A, %B %d,  %Y')
-		erb :"/date", :locals => { :date => date }
-		
+		erb :date
+
 		# erb :date
 	end
 
